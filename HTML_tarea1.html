@@ -375,6 +375,14 @@ ciudad &lt;- &quot;Orellana&quot;</code></pre>
 # los nombres de los países por donde cruza la cordillera de Los Andes
 
 paises_andes &lt;- c(&quot;Venezuela&quot;, &quot;Colombia&quot;, &quot;Ecuador&quot;, &quot;Perú&quot;, &quot;Bolivia&quot;, &quot;Chile&quot;)</code></pre>
+<pre class="r"><code># Crear un dataframe con 12 eventos (files) y 5 variables (columnas), 
+# cada columna debe tener diferentes tipos de datos (entero, decimal, 
+# caracter, logico)
+
+poblacion_paises_america &lt;- data.frame(Identador =seq(1:12),
+                                       norte_sur = as.factor(c(rep(0, 10), 1, 1)),
+                                       paises = c(&quot;Venezuela&quot;, &quot;Colombia&quot;, &quot;Ecuador&quot;, &quot;Perú&quot;, &quot;Bolivia&quot;,&quot;Chile&quot;, &quot;Brasil&quot;, &quot;Argentina&quot;, &quot;Paraguay&quot;, &quot;Uruguay&quot;, &quot;Canadá&quot;, &quot;USA&quot;),
+                                       poblacion = c(28.43, 50.88, 17.64, 33.05, 11.67, 19.11, 212.55, 45.19, 7.1, 3.4, 35.36, 323.99)) #millones</code></pre>
 </div>
 
 
