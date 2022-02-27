@@ -383,6 +383,16 @@ poblacion_paises_america &lt;- data.frame(Identador =seq(1:12),
                                        norte_sur = as.factor(c(rep(0, 10), 1, 1)),
                                        paises = c(&quot;Venezuela&quot;, &quot;Colombia&quot;, &quot;Ecuador&quot;, &quot;Perú&quot;, &quot;Bolivia&quot;,&quot;Chile&quot;, &quot;Brasil&quot;, &quot;Argentina&quot;, &quot;Paraguay&quot;, &quot;Uruguay&quot;, &quot;Canadá&quot;, &quot;USA&quot;),
                                        poblacion = c(28.43, 50.88, 17.64, 33.05, 11.67, 19.11, 212.55, 45.19, 7.1, 3.4, 35.36, 323.99)) #millones</code></pre>
+<pre class="r"><code># Cargue el dataset &quot;DNase&quot; e identifique su estructura. Extraiga (subset) 
+# los datos que cumplan con las condiciones de: 
+#   1. &quot;conc&quot; (concentracion) entre 0.1 y 0.2
+#   2. &quot;Run&quot; diferente a 2, &quot;conc&quot; mayor a 0.2 y &quot;density&quot; menor o igual a 1.0
+
+database &lt;- data(DNase)
+class(DNase)</code></pre>
+<pre><code>## [1] &quot;nfnGroupedData&quot; &quot;nfGroupedData&quot;  &quot;groupedData&quot;    &quot;data.frame&quot;</code></pre>
+<pre class="r"><code>first_filter &lt;- subset(DNase, conc &lt; 0.2 &amp; conc &gt; 0.1)
+second_filter &lt;- subset(DNase, Run != 2 &amp; conc &gt; 0.2 &amp; density &lt;= 1)</code></pre>
 </div>
 
 
