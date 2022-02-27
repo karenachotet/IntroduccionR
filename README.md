@@ -1,1 +1,2 @@
 # IntroduccionR
+Nombre: Karen Achote 
