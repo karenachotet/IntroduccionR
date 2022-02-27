@@ -1,7 +1,7 @@
 # IntroduccionR
 Datos personales
 
-Nombre:Karen Achote 
+Nombre: Karen Achote 
 
 Características del computador: 
 
